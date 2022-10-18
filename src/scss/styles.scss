@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$custom-colors: (
+  "primary": #30b2ff,
+  "secondary": #625E88,
+  "info": #1fdcda,
+  "danger": #FF53A7,
+  "light": #f5f8ff,
+  "dark": #2d2d5b,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-family-base: 'Roboto', sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: $light;
+}
+
+.active {
+  color: $info !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: $info !important;
+}
+
+.dropdown-item {
+  transition: background-color 0.5s ease;
+}
+
+.dropdown-item:hover {
+  background-color: $dark !important;
+  color: $light !important;
+}
+
+.btn {
+  box-shadow: 0px 10px 15px -3px rgba(48, 178, 255, 0.4);
+}
