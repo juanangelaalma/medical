@@ -40,6 +40,73 @@ body {
   color: $light !important;
 }
 
-.btn {
+.btn-primary {
   box-shadow: 0px 10px 15px -3px rgba(48, 178, 255, 0.4);
+}
+
+.btn-rounded-full {
+  width: 45px;
+  height: 45px;
+  border-radius: 9999px;
+}
+
+.header-jumbotron {
+  height: auto;
+}
+
+.header-jumbotron span, .header-jumbotron h1, .header-jumbotron p, .header-jumbotron button  {
+  animation-name: slide-bottom;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.header-jumbotron span {
+  animation-delay: 1400ms;
+  animation-duration: 1s;
+}
+
+.header-jumbotron h1 {
+  animation-delay: 700ms;
+  animation-duration: 1s;
+}
+
+.header-jumbotron p {
+  animation-delay: 1700ms;
+  animation-duration: 1s;
+  animation-name: slide-bottom-minify;
+}
+
+.header-jumbotron button {
+  animation-delay: 2400ms;
+  animation-duration: 1s;
+  animation-name: slide-bottom-minify;
+}
+
+.image-jumbotron img {
+  z-index: 3;
+  transform: transilateY(-100%);
+  animation: slide-top 1s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.header-jumbotron .circle-object {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: rgba(31, 220, 218, 0.3);
+  opacity: 0.2;
+  z-index: 1;
+  animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+@keyframes slide-top{0%{transform:translateY(100px)}100%{transform:translateY(0)}}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+@keyframes slide-bottom {0%{transform:translateY(-100px);opacity: 0;}100%{transform:translateY(0);opacity: 1;}}
+@keyframes slide-bottom-minify {0%{transform:translateY(-5px);opacity: 0;}100%{transform:translateY(0);opacity: 1;}}
+
+@media screen and (min-width: 1200px) {
+  .header-jumbotron {
+    height: 40rem;
+    overflow: hidden;
+  }
 }
