@@ -162,13 +162,6 @@ body {
   text-align: center;
 }
 
-.about-page header .icons div {
-  // top: 50%;
-  // transform: translateY(-50%) rotate(30deg);
-  // right: 10%;
-  background-color: #2d2d5b;
-}
-
 @keyframes slide-top{0%{transform:translateY(100px)}100%{transform:translateY(0)}}
 @keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
 @keyframes slide-bottom {0%{transform:translateY(-100px);opacity: 0;}100%{transform:translateY(0);opacity: 1;}}
