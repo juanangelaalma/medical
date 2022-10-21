@@ -1,14 +1,280 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1 class="text-primary">Contact</h1>
+    <div class="container-fluid contact-page p-0">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://template.rrgraphdesign.com/d/wp-content/uploads/2022/10/Logo-farma-medical.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link fw-bold" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link fw-bold" href="./pages/about.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link fw-bold" href="./pages/about.html"
+                  >About US</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link fw-bold" href="#">Blog</a>
+              </li>
+            </ul>
+            <button class="btn btn-primary text-white text-bold px-4 py-2">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <header class="bg-light">
+        <div class="container">
+          <div class="row position-relative">
+            <div class="col-sm-12 col-lg-6 py-2 text-primary">
+              <div class="d-flex flex-row align-items-center gap-2 fw-bold">
+                <span>THIS IS</span>
+                <hr
+                  style="width: 40px"
+                  class="opacity-100 border-2 border-primary"
+                />
+              </div>
+              <h1 class="display-1 fw-bold text-dark">Contact</h1>
+              <p class="small fst-italic text-dark">Home / About US</p>
+              <div
+                style="
+                  top: 50%;
+                  transform: translateY(-50%) rotate(30deg);
+                  right: 20%;
+                "
+                class="fs-4 icon text-danger position-absolute"
+              >
+                <i class="fa fa-heart"></i>
+              </div>
+              <div
+                style="
+                  top: 80%;
+                  transform: translateY(-50%) rotate(-10deg);
+                  right: 60%;
+                "
+                class="fs-5 icon text-danger position-absolute"
+              >
+                <i class="fa fa-user-md"></i>
+              </div>
+              <div
+                style="
+                  top: 20%;
+                  transform: translateY(-50%) rotate(-60deg);
+                  right: 30%;
+                "
+                class="fs-5 icon text-danger position-absolute"
+              >
+                <i class="fa fa-paper-plane"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- END OF NAVBAR -->
+
+      <main>
+        <section class="location section-padding bg-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-7 mb-4 position-relative">
+                <img
+                  src="https://demo.web3canvas.com/themeforest/medenin/images/contact-map.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div style="top: 40%;transform: translateY(50%);right: 20%;" class="position-absolute text-danger fs-3">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div style="top: 10%;transform: translateY(50%);right: 70%;" class="position-absolute text-danger fs-3">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div style="top: 40%;transform: translateY(50%);right: 45%;" class="position-absolute text-danger fs-3">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-5 mb-4">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum, esse.
+                </p>
+                <hr />
+                <h1 class="fs-3">Contact Information</h1>
+                <div class="d-flex flex-column gap-1 mt-3">
+                  <div class="d-flex gap-2">
+                    <div class="fs-6 bg-primary location__icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="w-75">
+                      <span class="small fw-normal">Phone</span>
+                      <p class="fs-6 fw-normal">0831-0954-3940</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <div class="fs-6 bg-primary location__icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="w-75">
+                      <span class="small fw-normal">Email</span>
+                      <p class="fs-6 fw-normal">juanangelaalma@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <h1 class="fs-3">Head Officer</h1>
+                <div class="d-flex gap-2">
+                  <div class="fs-6 bg-primary location__icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="w-75">
+                    <span class="small fw-normal">Location</span>
+                    <p class="fs-6 fw-normal">JL bromo no 73 Kauman Kec. Kauman Kab. Tulungagung Jawa Timur Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-form bg-light">
+          <iframe class="w-100 top-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.343443653456!2d112.72506461450386!3d-7.31526127395867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb7081be4f83%3A0xa9c00ebea3e64b3d!2sUniversitas%20Negeri%20Surabaya%20-%20Kampus%20Ketintang!5e0!3m2!1sid!2sid!4v1666394894600!5m2!1sid!2sid" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="row justify-content-end">
+            <div class="col-sm-12 col-lg-4 bg-light p-4" style="z-index: 10;bottom: 0;right: 10%;height: 105%;">
+              <h1 class="text-primary fs-4 mb-4">Get in touch with us</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="firstname" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="lastname" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastname" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputMesage" class="form-label">Password</label>
+                  <textarea type="text" class="form-control" id="exampleInputMesage"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary text-white">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-light container-fluid section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-3 mb-3">
+              <div
+                class="p-3 bg-white d-flex flex-column border-primary border-top"
+              >
+                <img
+                  class="mb-4 w-75"
+                  src="https://template.rrgraphdesign.com/d/wp-content/uploads/2022/10/Logo-farma-medical.png"
+                  alt=""
+                />
+                <p class="text-dark">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolore ratione maxime recusandae nostrum, facere porro quasi
+                  alias molestias laudantium accusantium?
+                </p>
+                <div class="d-flex flex-row text-dark align-items-center gap-2">
+                  <i class="fa fa-phone"></i>
+                  <span class="fw-bold">0831-3049-2940</span>
+                </div>
+                <div class="d-flex flex-row text-dark align-items-center gap-2">
+                  <i class="fa fa-envelope"></i>
+                  <span class="fw-bold">juanangelaalma@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 mb-3">
+              <div class="p-3">
+                <h4 class="text-primary fw-bold">Quick Links</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">About Us</li>
+                  <li class="mb-2">Our Mission</li>
+                  <li class="mb-2">Our Services</li>
+                  <li class="mb-2">Blogs</li>
+                  <li class="mb-2">Faq</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 mb-3">
+              <div class="p-3">
+                <h4 class="text-primary fw-bold">Our Services</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">Pediatics</li>
+                  <li class="mb-2">Cardiology</li>
+                  <li class="mb-2">Psychological</li>
+                  <li class="mb-2">Surgery</li>
+                  <li class="mb-2">Family Medicine</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 mb-3 p-3">
+              <button class="btn btn-outline-primary text-info w-100 mb-3">
+                Find a Doctor
+              </button>
+              <button class="btn btn-outline-primary text-info w-100 mb-3">
+                Career
+              </button>
+              <button class="btn btn-outline-primary text-info w-100 mb-3">
+                Newsletter
+              </button>
+              <div class="d-flex gap-2">
+                <small class="text-dark">Facebook</small>
+                <small class="text-dark">Instagram</small>
+                <small class="text-dark">Linkedin</small>
+                <small class="text-dark">Twitter</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

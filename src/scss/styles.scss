@@ -162,6 +162,19 @@ body {
   text-align: center;
 }
 
+.location__icon {
+  width: 40px;
+  height: 40px;
+  color: $white;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact-form .row {
+  padding: 1rem 2rem;
+}
+
 @keyframes slide-top{0%{transform:translateY(100px)}100%{transform:translateY(0)}}
 @keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
 @keyframes slide-bottom {0%{transform:translateY(-100px);opacity: 0;}100%{transform:translateY(0);opacity: 1;}}
@@ -238,5 +251,14 @@ body {
   .why-choose .container .row .col-sm-12 .details {
     padding-left: 1rem;
     width: 75%;
+  }
+
+  .contact-form {
+    position: relative;
+    height: 470px;
+  }
+
+  .contact-form iframe, .contact-form .col-sm-12 {
+    position: absolute;
   }
 }
