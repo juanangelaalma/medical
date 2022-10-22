@@ -19,7 +19,7 @@ $font-family-base: 'Roboto', sans-serif;
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  background-color: $light;
+  background-color: #f5f8ff;
 }
 
 .active {
@@ -242,6 +242,10 @@ body {
 
   footer .row  .btn {
     width: 70% !important;
+  }
+
+  .why-choose h1.w-100 {
+    width: 50% !important;
   }
 
   .why-choose .container .row .col-sm-12 {
