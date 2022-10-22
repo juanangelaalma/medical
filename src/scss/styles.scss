@@ -175,6 +175,26 @@ body {
   padding: 1rem 2rem;
 }
 
+.emergency {
+  background-image: url('https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/05/medical-council-1024x682.jpg');
+  background-size: cover;
+}
+
+.emergency::before {
+  content: '';
+  background-color: $primary;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.emergency .text{
+  z-index: 2;
+}
+
 @keyframes slide-top{0%{transform:translateY(100px)}100%{transform:translateY(0)}}
 @keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
 @keyframes slide-bottom {0%{transform:translateY(-100px);opacity: 0;}100%{transform:translateY(0);opacity: 1;}}
