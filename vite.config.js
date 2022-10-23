@@ -9,6 +9,8 @@ export default {
         contact: path.resolve(__dirname, 'src/pages/contact.html'),
         about: path.resolve(__dirname, 'src/pages/about.html'),
         blog: path.resolve(__dirname, 'src/pages/blog.html'),
+        singleblog: path.resolve(__dirname, 'src/pages/singleblog.html'),
+        testimonials: path.resolve(__dirname, 'src/pages/testimonials.html'),
       },
     },
     outDir: path.resolve(__dirname, 'dist'),
