@@ -27,7 +27,7 @@
 ![WhatsApp Image 2022-10-23 at 12 30 17](https://user-images.githubusercontent.com/85951512/197375555-61df6eee-0658-401c-aa61-631d9dc2c231.jpeg)
 
 ## Detail Blog
-![image](https://user-images.githubusercontent.com/85951512/197375571-43e6aacb-0057-47e8-a66d-ec5709818083.png)
+![WhatsApp Image 2022-10-23 at 12 34 35](https://user-images.githubusercontent.com/85951512/197375710-b8515a58-95fc-44a5-bd8a-f5b7fd011995.jpeg)
 
 ## Client Testimonials
 ![WhatsApp Image 2022-10-23 at 12 32 19](https://user-images.githubusercontent.com/85951512/197375651-ab0ddd24-c22a-4a25-94d3-5dc625b92399.jpeg)
