@@ -8,8 +8,8 @@ export default {
         main: path.resolve(__dirname, 'src/index.html'),
         contact: path.resolve(__dirname, 'src/pages/contact.html'),
         about: path.resolve(__dirname, 'src/pages/about.html'),
-        about: path.resolve(__dirname, 'src/pages/blog.html'),
-      }
+        blog: path.resolve(__dirname, 'src/pages/blog.html'),
+      },
     },
     outDir: path.resolve(__dirname, 'dist'),
   },
