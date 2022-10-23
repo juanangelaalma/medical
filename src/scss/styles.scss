@@ -19,7 +19,7 @@ $font-family-base: 'Roboto', sans-serif;
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  background-color: $light;
+  background-color: #f5f8ff;
 }
 
 .active {
@@ -84,13 +84,17 @@ body {
 }
 
 .image-jumbotron {
-  height: 400px !important;
+  height: 700px !important;
 }
 
 .image-jumbotron img {
   z-index: 3;
   transform: transilateY(-100%);
-  max-height: 100%;
+  // max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 
   animation: slide-top 1s cubic-bezier(.25,.46,.45,.94) both;
 }
@@ -175,6 +179,26 @@ body {
   padding: 1rem 2rem;
 }
 
+.emergency {
+  background-image: url('https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/05/medical-council-1024x682.jpg');
+  background-size: cover;
+}
+
+.emergency::before {
+  content: '';
+  background-color: $primary;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.emergency .text{
+  z-index: 2;
+}
+
 @keyframes slide-top{0%{transform:translateY(100px)}100%{transform:translateY(0)}}
 @keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
 @keyframes slide-bottom {0%{transform:translateY(-100px);opacity: 0;}100%{transform:translateY(0);opacity: 1;}}
@@ -203,6 +227,11 @@ body {
   }
 
   .image-jumbotron {
+    height: 100% !important;
+  }
+
+  .image-jumbotron img {
+    width: auto !important;
     height: 100% !important;
   }
 
@@ -244,6 +273,10 @@ body {
     width: 70% !important;
   }
 
+  .why-choose h1.w-100 {
+    width: 50% !important;
+  }
+
   .why-choose .container .row .col-sm-12 {
     display: flex;
   }
@@ -260,5 +293,13 @@ body {
 
   .contact-form iframe, .contact-form .col-sm-12 {
     position: absolute;
+  }
+
+  .card-testimonial {
+    padding: 4rem 1rem;
+  }
+
+  .card-testimonial div .fs-4 {
+    font-size: 18px !important;
   }
 }
